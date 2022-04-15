@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+      <div class="main-nav__wrapper">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="../images/logo.png" width="185" height="96" alt="Логотип Седона">
+        </a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фото и видео
+            </a>
+          </li>
+
+          <li class="site-list__item">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Отзывы</h1>
+    <section class="description">
+      <div class="description__wrapper">
+        <header class="description__header">
+          <h2 class="sedona">
+            оставьте свой отзыв
+          </h2>
+          <p class="slogan">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них,<br>а также о посещенных вами достопримечательностях
+          </p>
+        </header>
+        <div class="yourself">
+          <h3>Представьтесь:</h3>
+          <ol class="yourself__item">
+            <li class="yourself__list">ИМЯ*:
+              <input type="text">
+            </li>
+            <li class="yourself__list">ФАМИЛИЯ*:
+              <input type="text">
+            </li>
+            <li class="yourself__list">Отчество:
+              <input type="text">
+            </li>
+          </ol>
+
+          <h3>Контактная информация:</h3>
+          <ol class="contact-information">
+            <li class="contact-information__list">Контактный телефон*:
+              <input type="text">
+            </li>
+            <li class="contact-information__list">Электронная почта*:
+              <input type="text">
+            </li>
+          </ol>
+
+        </div>
+      </div>
+      <h3>ваше Общее впечатление:</h3>
+      <div class="impression">
+        <p class="impression__list"><input name="impression" type="radio" value="positive" checked>Скорее положительное
+        </p>
+        <p class="impression__list"><input name="impression" type="radio" value="negative">Скорее отрицательное</p>
+        <p class="impression__list"><input name="impression" type="radio" value="neutral">Затрудняюсь ответить</p>
+      </div>
+      <h3>посещенные достопримечательности:</h3>
+      <div class="attraction">
+        <ol class="attraction__item">
+          <li class="attraction__list"><input name="impression" type="checkbox" value="bridge" checked>Мост Дьявола</li>
+          <li class="attraction__list"><input name="impression" type="checkbox" value="park" checked>Слайд-парк</li>
+          <li class="attraction__list"><input name="impression" type="checkbox" value="mountain" checked>Гора-Колокол
+          </li>
+          <li class="attraction__list"><input name="impression" type="checkbox" value="rocks">Красные скалы</li>
+        </ol>
+      </div>
+    </section>
+    <div class="emotions">
+      <h3>Опишите свои эмоции:</h3>
+      <input type="text">
+      <button class="button"> ОТПРАВИТЬ ОТЗЫВ </button>
+      <p>* — обязательные поля</p>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__contacts contacts">
+        <b class="contacts__title">#visitSEDONA</b>
+      </div>
+      <div class="main-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
