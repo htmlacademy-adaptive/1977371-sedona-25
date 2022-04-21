@@ -1,11 +1,20 @@
 .main-container {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
 
-.main-container {
-  display: block;
+
+.sedona {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.benefits__number {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 }
