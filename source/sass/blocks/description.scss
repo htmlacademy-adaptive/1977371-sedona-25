@@ -16,6 +16,11 @@
     font-size: 30px;
     line-height: 26px;
   }
+
+  &--catalog {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .description__text {
@@ -29,5 +34,10 @@
   &--form {
     font-size: 14px;
     line-height: 24px;
+  }
+
+  &--catalog {
+    font-size: 14px;
+    line-height: 21px;
   }
 }
