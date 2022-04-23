@@ -13,7 +13,8 @@
   text-transform: uppercase;
 
   &--form {
-    
+    font-size: 30px;
+    line-height: 26px;
   }
 }
 
@@ -24,4 +25,9 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+
+  &--form {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
