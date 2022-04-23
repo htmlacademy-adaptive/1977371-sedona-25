@@ -1,5 +1,4 @@
 .description__header {
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -12,6 +11,10 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+
+  &--form {
+    
+  }
 }
 
 .description__text {
