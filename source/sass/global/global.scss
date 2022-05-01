@@ -4,22 +4,15 @@ img {
   object-position: center;
 }
 
-// .main-index::before {
-content: "";
-display: block;
-width: 100%;
-height: 485px; /* тут не помню сколько оно по высоте */
-background-image:
-  url("/source/icons/welcom.svg"),
-  url("/source/icons/zig-zag.svg"),
-  url("/source/img/sedona.jpg");
-background-repeat: no-repeat;
-background-size:
-  458px 352px,
-    1200px 57px,
-     er  ; /* тут надо просто заполнить всю площадь фоткой */
-background-position:
-  center,
-    bottom,
-    center    ; /* при ковровой растяжке фотки лучше всего отцентрировать */
-background-color: #555555; /* нужен какой-то цвет фоновый на случай незагрузки фотки. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
