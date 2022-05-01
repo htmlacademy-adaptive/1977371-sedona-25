@@ -11,13 +11,11 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  margin: 32px 35px;
 
   @media (--not-mobile) {
+    margin: 32px 26px;
     font-size: 21px;
-  }
-
-  @media (--mobile) {
-    margin: 32px 35px;
   }
 
 
