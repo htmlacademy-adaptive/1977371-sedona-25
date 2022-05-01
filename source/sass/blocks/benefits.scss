@@ -1,16 +1,26 @@
 .benefits {
+  display: grid;
+  grid-template-columns: 1fr;
   list-style-type: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  @media (--not-mobile) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .benefits__number {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
+
+  @media (--not-mobile) {
+    font-size: 21px;
+  }
 }
 
 .benefits__description {
@@ -18,4 +28,8 @@
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
+
+  @media (--not-mobile) {
+    font-weight: 400;
+  }
 }

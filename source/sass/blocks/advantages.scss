@@ -1,8 +1,9 @@
 .advantages {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
 
   @media (--not-mobile) {
-    width: 282px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

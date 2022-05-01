@@ -6,11 +6,20 @@
 
 .description__title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+
+  @media (--not-mobile) {
+    font-size: 21px;
+  }
+
+  @media (--mobile) {
+    margin: 32px 35px;
+  }
+
 
   &--form {
     font-size: 30px;
