@@ -1,5 +1,9 @@
 .advantages {
   display: block;
+
+  @media (--not-mobile) {
+    width: 282px;
+  }
 }
 
 .advantages__list {
