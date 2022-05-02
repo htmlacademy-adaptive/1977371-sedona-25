@@ -1,3 +1,13 @@
+.catalog {
+  @media (--mobile) {
+    width: 280px;
+  }
+}
+
+.catalog__list {
+  text-decoration: none;
+}
+
 .catalog__title {
   font-weight: 700;
   font-size: 14px;

@@ -4,6 +4,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  &--catalog {
+    @media (--mobile) {
+      width: 280px;
+    }
+  }
 }
 
 .main-index::before {
