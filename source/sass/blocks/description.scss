@@ -1,3 +1,7 @@
+.description {
+  text-align: center;
+}
+
 .description__header {
   align-items: center;
   text-align: center;
@@ -11,7 +15,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin: 32px 35px;
+  margin: 32px 19px 35px 19px;
 
   @media (--not-mobile) {
     margin: 32px 26px;
@@ -37,7 +41,8 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-
+  margin: 0;
+  margin-bottom: 16px;
 
   &--form {
     font-size: 14px;

@@ -17,6 +17,8 @@
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
+  margin-top: 33px;
+  margin-bottom: 49px;
 
   @media (--not-mobile) {
     font-size: 21px;
@@ -28,6 +30,7 @@
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
+  margin: 0;
 
   @media (--not-mobile) {
     font-weight: 400;
