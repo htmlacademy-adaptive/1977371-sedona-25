@@ -12,6 +12,8 @@
 
 .advantages__item {
   @media (--mobile) {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     margin-bottom: 22px;
   }
@@ -24,6 +26,10 @@
   align-items: center;
   text-transform: uppercase;
   margin: 0;
+
+  @media (--mobile) {
+    margin-left: 7px;
+  }
 
   @media (--not-mobile) {
     font-size: 21px;
@@ -42,7 +48,6 @@
     margin-top: 16px;
   }
 }
-
 
 .advantages__logo {
   height: 72px;

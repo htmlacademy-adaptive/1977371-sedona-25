@@ -8,6 +8,8 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 38px;
+  margin-bottom: 21px;
 
   @media (--not-mobile) {
     font-size: 30px;
@@ -32,6 +34,17 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+
+  @media (--tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 46px;
+  }
 }
 
 .information__button {
@@ -40,4 +53,14 @@
   line-height: 26px;
   color: #000000;
   text-decoration: none;
+  margin: 0;
+  margin-bottom: 49px;
+
+  @media (--tablet) {
+    margin-bottom: 58px;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 66px;
+  }
 }
