@@ -45,3 +45,21 @@
   background-color: #81b3d2;
   color: #ffffff;
 }
+
+.photo-sedona {
+  grid-column-end: span 2;
+}
+
+.benefits__item:nth-child(2n+2) .photo-sedona {
+  @media (--not-mobile) {
+    order: -1;
+  }
+}
+
+.benefits__item--illustrated {
+  @media (--not-mobile) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
