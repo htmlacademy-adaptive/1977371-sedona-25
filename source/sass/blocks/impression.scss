@@ -1,3 +1,6 @@
+.impression {
+}
+
 .impression__title {
   font-weight: 700;
   font-size: 18px;
@@ -22,9 +25,14 @@
   list-style-type: none;
   margin-left: 20px;
 
-  @media (--not-mobile) {
-    display: flex;
-    flex-wrap: wrap;
+  @media (--tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (--desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

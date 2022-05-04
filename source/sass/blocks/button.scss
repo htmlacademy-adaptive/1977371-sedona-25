@@ -2,6 +2,16 @@
   background: transparent;
   background-color: #81b3d2;
   color: #ffffff;
+  text-decoration: none;
+
+  &--index {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 16px 49px;
+    text-transform: uppercase;
+    border: 0;
+  }
 
   &--form {
     font-weight: 700;
@@ -12,6 +22,14 @@
     border: 0;
   }
 }
+
+.button__index {
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 49px;
+  text-align: center;
+}
+
 
 .button__form {
   margin: auto;
