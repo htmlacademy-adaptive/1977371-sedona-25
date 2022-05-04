@@ -17,6 +17,23 @@
   margin: auto;
   margin-top: 56px;
   text-align: center;
+
+  @media (--not-mobile) {
+    margin-top: 48px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (--tablet) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media (--desktop) {
+    margin-left: 216px;
+    margin-right: 216px;
+  }
 }
 
 .button__text {
@@ -27,4 +44,8 @@
   margin: 0;
   margin-right: 20px;
   text-align: right;
+
+  @media (--not-mobile) {
+    margin: 0;
+  }
 }
