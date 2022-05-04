@@ -1,10 +1,24 @@
+.attraction {
+  margin-top: 49px;
+  margin-bottom: 49px;
+}
+
 .attraction__title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.attraction__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 20px;
 }
 
 .attraction__text {
@@ -12,3 +26,4 @@
   font-size: 18px;
   line-height: 26px;
 }
+

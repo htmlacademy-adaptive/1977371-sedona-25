@@ -1,8 +1,21 @@
 .impression__title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.impression__list {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  list-style-type: none;
+  margin-left: 20px;
 }
 
 .impression__different {
