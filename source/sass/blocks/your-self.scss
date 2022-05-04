@@ -1,5 +1,9 @@
 .your-self {
   margin-top: 24px;
+
+  @media (--not-mobile) {
+    margin-top: 0;
+  }
 }
 
 .your-self__title {
@@ -10,6 +14,11 @@
   line-height: 26px;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media (--not-mobile) {
+    font-size: 21px
+    margin-bottom: 28px;
+  }
 }
 
 .your-self__list {

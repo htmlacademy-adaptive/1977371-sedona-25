@@ -1,0 +1,15 @@
+.your {
+  @media (--tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 106px;
+    margin-bottom: 48px;
+  }
+
+  @media (--desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 66px;
+    margin-bottom: 46px;
+  }
+}
