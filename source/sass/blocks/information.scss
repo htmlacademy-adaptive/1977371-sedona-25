@@ -2,6 +2,22 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+
+  &--catalog {
+    @media (--mobile) {
+      margin-top: 19px;
+    }
+
+    @media (--tablet) {
+      margin-top: 58px;
+      margin-bottom: 40px;
+    }
+
+    @media (--desktop) {
+      margin-top: 62px;
+      margin-bottom: 120px;
+    }
+  }
 }
 
 .information__title {
@@ -27,6 +43,14 @@
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 26px;
+
+    @media (--not-mobile) {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 26px;
+    }
   }
 }
 
@@ -44,6 +68,27 @@
 
   @media (--desktop) {
     margin-bottom: 46px;
+  }
+
+  &--catalog {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 38px;
+
+    @media (--not-mobile) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 65px;
+
+      br {
+        display: none;
+      }
+    }
   }
 }
 
