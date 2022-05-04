@@ -6,6 +6,11 @@
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
+
+  @media (--not-mobile) {
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
 }
 
 .impression__list {
@@ -16,6 +21,11 @@
   line-height: 26px;
   list-style-type: none;
   margin-left: 20px;
+
+  @media (--not-mobile) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .impression__different {
