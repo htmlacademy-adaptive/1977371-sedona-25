@@ -5,17 +5,24 @@
 
   &--catalog {
     @media (--mobile) {
+      width: 266px;
+      margin: auto;
       margin-top: 17px;
+      margin-bottom: 38px;
     }
 
     @media (--tablet) {
+      width: 445px;
+      margin: auto;
       margin-top: 58px;
-      margin-bottom: 40px;
+      margin-bottom: 66px;
     }
 
     @media (--desktop) {
+      width: 445px;
+      margin: auto;
       margin-top: 62px;
-      margin-bottom: 120px;
+      margin-bottom: 64px;
     }
   }
 }
@@ -82,13 +89,11 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 38px;
 
     @media (--not-mobile) {
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
-      margin-bottom: 65px;
 
       br {
         display: none;

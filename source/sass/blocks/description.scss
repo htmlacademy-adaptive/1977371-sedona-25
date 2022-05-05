@@ -63,6 +63,29 @@
     margin-bottom: 45px;
     width: 483px;
   }
+
+  &--catalog {
+    @media (--mobile) {
+      width: 280px;
+      margin: auto;
+      margin-top: 33px;
+      margin-bottom: 31px;
+    }
+
+    @media (--tablet) {
+      width: 458px;
+      margin: auto;
+      margin-top: 62px;
+      margin-bottom: 63px;
+    }
+
+    @media (--desktop) {
+      width: 458px;
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 65px;
+    }
+  }
 }
 
 .description__title {
@@ -85,9 +108,9 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
+    margin: 0;
 
     @media (--mobile) {
-      margin-top: 47px;
       margin-bottom: 26px;
     }
 
@@ -123,12 +146,7 @@
   &--catalog {
     font-size: 14px;
     line-height: 21px;
-    margin-top: 0;
-    margin-bottom: 24.68px;
-
-    @media (--not-mobile) {
-      margin: 0;
-    }
+    margin: 0;
   }
 
   &--form {
