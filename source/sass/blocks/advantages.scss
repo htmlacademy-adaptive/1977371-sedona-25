@@ -7,6 +7,10 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (--mobile) {
+    margin-bottom: 30px;
+  }
+
   @media (--not-mobile) {
     grid-column: 1 / -1;
   }
@@ -68,6 +72,7 @@
   }
 
   @media (--not-mobile) {
+    margin-bottom: 21px;
     font-size: 21px;
   }
 }

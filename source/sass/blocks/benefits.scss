@@ -14,19 +14,51 @@
   }
 }
 
+
+.benefits__item:nth-child(3) {
+  @media (--mobile) {
+    margin: 26px 26px 24px 26px;
+  }
+
+  @media (--tablet) {
+    padding: 42px 34px 63px 33px;
+  }
+}
+
+.benefits__item:nth-child(4) {
+  @media (--mobile) {
+    margin: 24px 41.5px 24px 41.5px;
+  }
+
+  @media (--tablet) {
+    padding: 41px 48px 41px 46px;
+  }
+}
+
+.benefits__item:nth-child(5) {
+  @media (--mobile) {
+    margin: 24px 18px 26px 18px;
+  }
+
+  @media (--tablet) {
+    padding: 42px 41.5px;
+  }
+}
+
 .benefits__number {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
-  margin-top: 39px;
+  margin: 0;
   margin-bottom: 49px;
 
   @media (--not-mobile) {
     font-size: 21px;
   }
 }
+
 
 .benefits__description {
   font-size: 14px;
@@ -44,6 +76,22 @@
 .real-hous {
   background-color: #81b3d2;
   color: #ffffff;
+
+  @media (--mobile) {
+    padding: 39px 16px 35px 15px;
+  }
+}
+
+.real-hous:nth-child(1) {
+  @media (--tablet) {
+    padding: 41.5px 32px;
+  }
+}
+
+.real-hous:nth-child(1) {
+  @media (--mobile) {
+    padding: 54px 19px 40px;
+  }
 }
 
 .photo-sedona {

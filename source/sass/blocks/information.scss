@@ -29,6 +29,8 @@
 
   @media (--not-mobile) {
     font-size: 30px;
+    margin-top: 61px;
+    margin-bottom: 26px;
   }
 
   &--form {
@@ -59,16 +61,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin: 0;
-  margin-bottom: 32px;
+  width: 261px;
+  margin: auto;
   padding: 0;
 
   @media (--tablet) {
     margin-bottom: 40px;
+    width: 435px;
   }
 
   @media (--desktop) {
-    margin-bottom: 46px;
+    margin-bottom: 45px;
+    width: 435px;
   }
 
   &--catalog {

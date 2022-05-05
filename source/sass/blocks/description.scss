@@ -45,6 +45,14 @@
   }
 }
 
+.description__header {
+  @media (--tablet) {
+    margin-top: 48px;
+    margin-bottom: 56.5px;
+    width: 520px;
+  }
+}
+
 .description__title {
   font-weight: 700;
   font-size: 18px;
@@ -54,8 +62,8 @@
   text-transform: uppercase;
   margin: 32px 19px 35px 19px;
 
-  @media (--not-mobile) {
-    margin: 32px 26px;
+  @media (--tablet) {
+    margin-bottom: 26px;
     font-size: 21px;
   }
 
@@ -99,6 +107,9 @@
   margin: 0;
   margin-bottom: 16px;
 
+  @media (--desktop) {
+    margin-bottom: 45px;
+  }
 
   &--catalog {
     font-size: 14px;
