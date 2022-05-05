@@ -35,11 +35,6 @@
     margin-bottom: 22px;
   }
 
-  @media (--tablet) {
-    margin-top: 158px;
-    margin-bottom: 59px;
-  }
-
   @media (--desktop) {
     margin-top: 158px;
     margin-bottom: 80px;
@@ -48,17 +43,29 @@
 
 .advantages__item--housing {
   @media (--tablet) {
-    padding-left: 36px;
-    padding-right: 36px;
+    margin: auto;
+    width: 185px;
+    margin-top: 158px;
+    margin-bottom: 59px;
   }
 }
 
 .advantages__item--food {
   @media (--tablet) {
-    padding-left: 36px;
-    padding-right: 36px;
+    margin: auto;
+    width: 180px;
+    margin-top: 158px;
+    margin-bottom: 59px;
   }
 }
+
+.advantages__item--souvenirs {
+  @media (--tablet) {
+    margin: auto;
+    width: 193px;
+    margin-top: 158px;
+    margin-bottom: 81px;
+  }
 
 
 .advantages__title {

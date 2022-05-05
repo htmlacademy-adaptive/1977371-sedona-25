@@ -74,21 +74,12 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
 
-  @media (--mobile) {
-    margin-bottom: 35px;
-  }
-
-  @media (--tablet) {
+  @media (--not-mobile) {
     margin-bottom: 26px;
     font-size: 21px;
   }
-
-  @media (--desktop) {
-    font-size: 21px;
-    margin-bottom: 26px;
-  }
-
 
   &--catalog {
     font-weight: 700;

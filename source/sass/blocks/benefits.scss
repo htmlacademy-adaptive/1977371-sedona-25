@@ -80,17 +80,13 @@
   @media (--mobile) {
     padding: 39px 16px 35px 15px;
   }
-}
 
-.real-hous:nth-child(1) {
   @media (--tablet) {
     padding: 41.5px 32px;
   }
-}
 
-.real-hous:nth-child(1) {
-  @media (--mobile) {
-    padding: 54px 19px 40px;
+  @media (--desktop) {
+    padding: 47px 52px 57px 53px;
   }
 }
 
