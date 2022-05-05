@@ -23,6 +23,11 @@
   @media (--tablet) {
     padding: 42px 34px 63px 33px;
   }
+
+  @media (--desktop) {
+    width: 315px;
+    padding: 43px 43px 62px 42px;
+  }
 }
 
 .benefits__item:nth-child(4) {
@@ -33,6 +38,11 @@
   @media (--tablet) {
     padding: 41px 48px 41px 46px;
   }
+
+  @media (--desktop) {
+    width: 292px;
+    padding: 42px 54px 61px;
+  }
 }
 
 .benefits__item:nth-child(5) {
@@ -42,6 +52,11 @@
 
   @media (--tablet) {
     padding: 42px 41.5px;
+  }
+
+  @media (--desktop) {
+    width: 290px;
+    padding: 43px 55px 62px;
   }
 }
 
@@ -56,6 +71,7 @@
 
   @media (--not-mobile) {
     font-size: 21px;
+    margin-bottom: 67px;
   }
 }
 
@@ -86,6 +102,7 @@
   }
 
   @media (--desktop) {
+    width: 295px;
     padding: 47px 52px 57px 53px;
   }
 }

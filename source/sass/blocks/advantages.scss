@@ -45,8 +45,15 @@
   @media (--tablet) {
     margin: auto;
     width: 185px;
-    margin-top: 158px;
-    margin-bottom: 59px;
+    padding-top: 158px;
+    padding-bottom: 59px;
+  }
+
+  @media (--desktop) {
+    margin: auto;
+    width: 282px;
+    padding-top: 159px;
+    padding-bottom: 80px;
   }
 }
 
@@ -54,8 +61,15 @@
   @media (--tablet) {
     margin: auto;
     width: 180px;
-    margin-top: 158px;
-    margin-bottom: 59px;
+    padding-top: 158px;
+    padding-bottom: 59px;
+  }
+
+  @media (--desktop) {
+    margin: auto;
+    width: 313px;
+    padding-top: 157px;
+    padding-bottom: 81px;
   }
 }
 
@@ -63,10 +77,17 @@
   @media (--tablet) {
     margin: auto;
     width: 193px;
-    margin-top: 158px;
-    margin-bottom: 81px;
+    padding-top: 158px;
+    padding-bottom: 81px;
   }
 
+  @media (--desktop) {
+    margin: auto;
+    width: 244px;
+    padding-top: 158px;
+    padding-bottom: 80px;
+  }
+}
 
 .advantages__title {
   font-weight: 700;
@@ -100,4 +121,3 @@
   outline: 5px solid rgba(17, 0, 252, 0.8);
   outline-offset: -5px;
 }
-
