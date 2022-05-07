@@ -123,6 +123,10 @@
   }
 }
 
+.benefits__img {
+  display: block;
+}
+
 .benefits__item:nth-child(2n+2) .photo-sedona {
   @media (--not-mobile) {
     order: -1;
