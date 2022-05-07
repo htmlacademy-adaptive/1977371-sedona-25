@@ -111,6 +111,16 @@
   grid-column-end: span 2;
   width: 520px;
   height: 260px;
+
+  @media (--tablet) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (--desktop) {
+    width: 800px;
+    height: 256px;
+  }
 }
 
 .benefits__item:nth-child(2n+2) .photo-sedona {
