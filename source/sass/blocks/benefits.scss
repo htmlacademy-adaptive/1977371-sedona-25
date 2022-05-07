@@ -71,7 +71,7 @@
 
   @media (--not-mobile) {
     font-size: 21px;
-    margin-bottom: 67px;
+    margin-bottom: 57px;
   }
 }
 
@@ -108,7 +108,7 @@
 }
 
 .photo-sedona {
-  grid-column-end: span 2;
+  // grid-column-end: span 2;
   width: 520px;
   height: 260px;
 
@@ -124,7 +124,7 @@
 }
 
 .benefits__img {
-  display: block;
+  grid-column-end: span 2;
 }
 
 .benefits__item:nth-child(2n+2) .photo-sedona {
