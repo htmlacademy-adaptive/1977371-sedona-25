@@ -104,6 +104,16 @@
 
 .maps {
   display: block;
-  margin: 0;
+  margin: auto;
   padding: 0;
+  width: 320px;
+  height: 350px;
+
+  @media (--tablet) {
+    width: 768px;
+  }
+
+  @media (--desktop) {
+    width: 1200px;
+  }
 }
