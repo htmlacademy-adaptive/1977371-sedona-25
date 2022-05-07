@@ -117,3 +117,35 @@
     width: 1200px;
   }
 }
+
+.maps__svg {
+  position: relative;
+  order: -1;
+  top: -198px;
+  right: -150px;
+
+  @media (--tablet) {
+    top: -195px;
+    right: -373px;
+  }
+
+  @media (--desktop) {
+    right: -590px;
+  }
+}
+
+.maps__svg2 {
+  position: relative;
+  order: 1;
+  top: -203px;
+  right: -124px;
+
+  @media (--tablet) {
+    top: -200.2px;
+    right: -347px;
+  }
+
+  @media (--desktop) {
+    right: -564px;
+  }
+}
