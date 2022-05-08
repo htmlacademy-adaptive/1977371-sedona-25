@@ -28,6 +28,26 @@
   }
 }
 
+.catalog__item-image {
+  margin: auto;
+  padding: 0;
+
+  @media (--mobile) {
+    width: 280px;
+    height: 280px;
+  }
+
+  @media (--tablet) {
+    width: 648px;
+    height: 400px;
+  }
+
+  @media (--desktop) {
+    width: 1200px;
+    height: 400px;
+  }
+}
+
 .catalog__signatur {
   @media (--tablet) {
     background-color: #f2f2f2;

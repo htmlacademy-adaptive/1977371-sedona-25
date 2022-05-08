@@ -21,7 +21,16 @@
     <div class="catalog__wrapper">
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img src="./img/catalog/photo-1.jpg" width="648" height="400" alt="Народные просторы.">
+          <p class="catalog__item-image">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photo-1-desktop@1x.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/photo-1-tablet@1x.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+              <img src="img/catalog/photo-1-mobile@1x.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x"
+                alt="Народные просторы">
+            </picture>
+          </p>
           <div class="catalog__signatur">
             <h3 class="catalog__title">Неродные просторы</h3>
             <p class="catalog__author">Автор фото: Борис</p>
