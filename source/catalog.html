@@ -38,7 +38,16 @@
           </div>
         </li>
         <li class="catalog__item-two">
-          <img src="./img/catalog/photo-2.jpg" width="324" height="267" alt="Местная растительность.">
+          <p class="catalog__item-two-image">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photo-2-desktop@1x.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x" <source
+                media="(min-width: 768px)"
+                srcset="img/catalog/photo-2-tablet@1x.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x" <img
+                src="img/catalog/photo-2-mobile@1x.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x"
+                alt="Местная растительность.">
+            </picture>
+          </p>
           <div class="catalog__signatur">
             <h3 class="catalog__title">Местная растительность</h3>
             <p class="catalog__author">Автор фото: Сергей</p>
@@ -46,7 +55,9 @@
           </div>
         </li>
         <li class="catalog__item-two">
-          <img src="./img/catalog/photo-3.jpg" width="324" height="267" alt="Дорога на север.">
+          <p class="catalog__item-two-image">
+            <img src="./img/catalog/photo-3.jpg" width="324" height="267" alt="Дорога на север.">
+          </p>
           <div class="catalog__signatur">
             <h3 class="catalog__title">Дорога на север</h3>
             <p class="catalog__author">Автор фото: Петр</p>
@@ -54,7 +65,9 @@
           </div>
         </li>
         <li class="catalog__item-two">
-          <img src="./img/catalog/photo-4.jpg" width="324" height="267" alt="Мост дьявола.">
+          <p class="catalog__item-two-image">
+            <img src="./img/catalog/photo-4.jpg" width="324" height="267" alt="Мост дьявола.">
+          </p>
           <div class="catalog__signatur">
             <h3 class="catalog__title">Мост дьявола</h3>
             <p class="catalog__author">Автор фото: Антон</p>
