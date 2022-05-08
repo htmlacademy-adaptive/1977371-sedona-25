@@ -149,3 +149,23 @@
     right: -564px;
   }
 }
+
+.video--catalog {
+  margin: 0;
+  padding: 0;
+
+  @media (--mobile) {
+    width: 280px;
+    height: 177px;
+  }
+
+  @media (--tablet) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (--desktop) {
+    width: 800px;
+    height: 500px;
+  }
+}

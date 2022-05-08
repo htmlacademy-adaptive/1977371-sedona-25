@@ -5,12 +5,12 @@
 {% block main %}
 <main class="main-container">
   <h1 class="visually-hidden">фото и видео</h1>
-  <section class="description--catalog">
-    <header class="description__header--catalog">
-      <h2 class="description__title--catalog">
+  <section class="description description--catalog">
+    <header class="description__header description__header--catalog">
+      <h2 class="description__title description__title--catalog">
         фото и видео
       </h2>
-      <p class="description__text--catalog">
+      <p class="description__text description__text--catalog">
         Не можете решиться на <br>путешествие из-за курса? <br> Фотографии помогут вам забыть о <br>политике и
         экономике.
       </p>
@@ -32,8 +32,10 @@
             </picture>
           </p>
           <div class="catalog__signatur">
-            <h3 class="catalog__title">Неродные просторы</h3>
-            <p class="catalog__author">Автор фото: Борис</p>
+            <div>
+              <h3 class="catalog__title">Неродные просторы</h3>
+              <p class="catalog__author">Автор фото: Борис</p>
+            </div>
             <p class="catalog__like">1350</p>
           </div>
         </li>
@@ -49,8 +51,10 @@
             </picture>
           </p>
           <div class="catalog__signatur">
-            <h3 class="catalog__title">Местная растительность</h3>
-            <p class="catalog__author">Автор фото: Сергей</p>
+            <div>
+              <h3 class="catalog__title">Местная растительность</h3>
+              <p class="catalog__author">Автор фото: Сергей</p>
+            </div>
             <p class="catalog__like">143</p>
           </div>
         </li>
@@ -66,8 +70,10 @@
             </picture>
           </p>
           <div class="catalog__signatur">
-            <h3 class="catalog__title">Дорога на север</h3>
-            <p class="catalog__author">Автор фото: Петр</p>
+            <div>
+              <h3 class="catalog__title">Дорога на север</h3>
+              <p class="catalog__author">Автор фото: Петр</p>
+            </div>
             <p class="catalog__like">96</p>
           </div>
         </li>
@@ -83,23 +89,32 @@
             </picture>
           </p>
           <div class="catalog__signatur">
-            <h3 class="catalog__title">Мост дьявола</h3>
-            <p class="catalog__author">Автор фото: Антон</p>
+            <div>
+              <h3 class="catalog__title">Мост дьявола</h3>
+              <p class="catalog__author">Автор фото: Антон</p>
+            </div>
             <p class="catalog__like">254</p>
           </div>
         </li>
       </ul>
     </div>
   </section>
-  <section class="information--catalog">
-    <h2 class="information__title--catalog">
+  <section class="information information--catalog">
+    <h2 class="information__title information__title--catalog">
       Все еще сомневаетесь?
     </h2>
-    <p class="information__text--catalog">
+    <p class="information__text information__text--catalog">
       Смотрите видеопрезентацию и <br>скорее за билетами, пока они не <br>подорожали в очередной раз!
     </p>
   </section>
-  <img class="information__video--catalog" src="./img/catalog/video-desktop.jpg" width="648" height="500"
-    alt="Превью видео.">
+  <div class="video--catalog">
+    <picture>
+      <source media="(min-width: 1200px)"
+        srcset="img/catalog/video-desctop@1x.jpg 1x, img/catalog/video-desctop@2x.jpg 2x">
+      <source media="(min-width: 768px)"
+        srcset="img/catalog/video-tablet@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+      <img src="img/catalog/video-mobile@1x.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Превью видео.">
+    </picture>
+  </div>
 </main>
 {% endblock %}
