@@ -31,20 +31,21 @@
   }
 }
 
+.button--index:hover {
+  background: #669ec0;
+}
+
+.button--index:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button__index {
   margin: auto;
   margin-top: 32px;
   margin-bottom: 49px;
 }
 
-.button--index:hover {
-  background: #669ec0;
-}
-
-.button--index:activ {
-  background: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .button__form {
   margin: auto;
