@@ -1,0 +1,38 @@
+.main-footer {
+  padding: 0;
+  margin: 0;
+}
+
+.social__list {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__link {
+  color: #000000;
+}
+
+
+.social__link::before {
+  content: "";
+  display: block;
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+  background: var(--icon) no-repeat center / contain;
+}
+
+.social__link--icon_vk {
+  --icon: url("../../icons/vk.svg");
+}
+
+.social__link--icon_tg {
+  --icon: url("../../icons/tg.svg");
+}
+
+.social__link--icon_yt {
+  --icon: url("../../icons/yt.svg");
+}
