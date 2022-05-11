@@ -82,6 +82,7 @@
   align-items: center;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
 
   @media (--not-mobile) {
     font-weight: 400;
@@ -102,7 +103,6 @@
   }
 
   @media (--desktop) {
-    width: 295px;
     padding: 47px 52px 57px 53px;
   }
 }
