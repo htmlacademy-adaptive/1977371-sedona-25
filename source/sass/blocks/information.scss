@@ -94,48 +94,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
-
-      br {
-        display: none;
-      }
+      display: none;
     }
-  }
-}
-
-.maps {
-  display: block;
-  margin: auto;
-  padding: 0;
-  width: 320px;
-  height: 350px;
-
-  @media (--tablet) {
-    width: 768px;
-  }
-
-  @media (--desktop) {
-    width: 1200px;
-  }
-}
-
-.video--catalog {
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-
-  @media (--mobile) {
-    width: 280px;
-    height: 177px;
-  }
-
-  @media (--tablet) {
-    width: 648px;
-    height: 500px;
-  }
-
-  @media (--desktop) {
-    width: 800px;
-    height: 500px;
   }
 }

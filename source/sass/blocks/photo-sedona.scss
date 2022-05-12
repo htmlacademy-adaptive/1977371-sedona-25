@@ -1,0 +1,15 @@
+.photo-sedona {
+  width: 520px;
+  height: 260px;
+  display: block;
+
+  @media (--tablet) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (--desktop) {
+    width: 800px;
+    height: 256px;
+  }
+}

@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.contacts__link {
+  color: #000000;
+}
+
 .social__list {
   display: flex;
   text-decoration: none;
@@ -11,18 +15,17 @@
   margin: 0;
 }
 
-.contacts__link {
-  color: #000000;
+.social__item {
+  padding: 12px;
+  background-color: #81b3d2;
 }
-
 
 .social__link::before {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: var(--icon) no-repeat center / contain;
-  background-color: #000000;
 }
 
 .social__link--icon_vk {
@@ -30,9 +33,9 @@
 }
 
 .social__link--icon_tg {
-  --icon: url("../../icons/tg.svg");
+  --icon: url("../../icons/sprite.svg#tg");
 }
 
 .social__link--icon_yt {
-  --icon: url("../../icons/yt.svg");
+  --icon: url("../../icons/sprite.svg#yt");
 }
