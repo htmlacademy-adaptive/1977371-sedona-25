@@ -18,12 +18,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
+  width: 238px;
+  margin: 64px auto 20px;
 
   @media (--not-mobile) {
+    width: 278px;
     font-size: 21px;
-    margin-bottom: 28px;
+    margin: 0 auto 28px;
   }
 }
 

@@ -26,6 +26,10 @@
 }
 
 .catalog__item {
+  @media (--mobile) {
+    margin: 24px auto 25px;
+  }
+
   @media (--not-mobile) {
     grid-column: 1/-1;
   }
@@ -58,6 +62,7 @@
   padding: 0;
 
   @media (--mobile) {
+    margin: 24px auto 25px;
     width: 280px;
     height: 280px;
   }

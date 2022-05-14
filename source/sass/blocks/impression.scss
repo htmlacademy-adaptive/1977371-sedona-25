@@ -4,12 +4,19 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
+  width: 233px;
+  margin: 59px auto 20px;
 
-  @media (--not-mobile) {
+  @media (--tablet) {
     font-size: 21px;
-    margin-bottom: 28px;
+    width: 402px;
+    margin: 48px auto 28px;
+  }
+
+  @media (--desktop) {
+    font-size: 21px;
+    width: 400px;
+    margin: 56px auto 28px;
   }
 }
 

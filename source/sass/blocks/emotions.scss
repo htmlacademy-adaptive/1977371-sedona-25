@@ -1,18 +1,22 @@
-.emotions {
-  text-align: center;
-}
-
 .emotions__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 20px;
+  width: 245px;
+  margin: 49px auto 20px;
 
-  @media (--not-mobile) {
+  @media (--tablet) {
     font-size: 21px;
-    margin-bottom: 28px;
+    width: 402px;
+    margin: 42px auto 28px;
+  }
+
+  @media (--tablet) {
+    font-size: 21px;
+    width: 400px;
+    margin: 56px auto 28px;
   }
 }
 
@@ -27,13 +31,16 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-left: 20px;
 
   @media (--tablet) {
+    margin-left: 60px;
     width: 648px; /* Ширина */
     height: 160px; /* Высота */
   }
 
   @media (--desktop) {
+    margin-left: 216px;
     width: 768px; /* Ширина */
     height: 160px; /* Высота */
   }
