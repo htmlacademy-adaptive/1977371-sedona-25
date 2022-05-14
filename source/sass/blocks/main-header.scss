@@ -1,5 +1,14 @@
 .main-header {
   display: flex;
-  background-color: #242424;
+  flex-direction: column;
+  background-color: #ffffff;
   color: #ffffff;
+}
+
+.main-header__logo-image {
+  position: absolute;
+  top: 0;
+  height: 96px;
+  width: 185px;
+  margin-left: 67px;
 }
