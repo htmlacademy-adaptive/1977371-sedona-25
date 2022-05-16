@@ -85,6 +85,10 @@
     padding: 22px 20px 15px 20px;
     background-color: #f2f2f2;
   }
+
+  @media (--desktop) {
+    background-color: transparent;
+  }
 }
 
 .catalog__title {
@@ -108,9 +112,26 @@
 }
 
 .catalog__like {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0;
 }
+
+.catalog__like p {
+  margin: 0;
+  padding-top: 3px;
+}
+
+.catalog__like-svg {
+  width: 23px;
+  height: 21px;
+  margin-right: 14px;
+  opacity: 0.3;
+
+  @media (--not-mobile) {
+    margin-right: 9px;
+  }
+}
+
