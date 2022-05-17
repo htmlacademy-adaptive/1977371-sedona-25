@@ -3,7 +3,7 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main class="main-container">
+<main class="main-container main-form">
   <h1 class="visually-hidden">Отзывы</h1>
   <section class="description--form">
     <header class="description__header--form">
@@ -21,19 +21,19 @@
         <h3 class="your-self__title" id="your-self">Представьтесь:</h3>
         <ul class="your-self__list">
           <li class="your-self__item">
-            <label>
+            <label style="padding-left: 10px">
               Имя<span aria-hidden="true">*</span>:
-              <input type="text" placeholder="Пётр" required>
+              <input type="text" class="your-self__text" placeholder="Пётр" required>
             </label>
           </li>
           <li class="your-self__item">
-            <label>
+            <label style="padding-left: 10px">
               Фамилия<span aria-hidden="true">*</span>:
               <input type="text" placeholder="Пустота" required>
             </label>
           </li>
           <li class="your-self__item">
-            <label>
+            <label style="padding-left: 10px">
               Отчество:
               <input type="text" placeholder="Викторович">
             </label>
@@ -44,13 +44,13 @@
         <h3 class="your-contact__title" id="your-contact">Контактная информация:</h3>
         <ul class="your-contact__list">
           <li class="your-contact__item">
-            <label>
+            <label style="padding-left: 10px">
               Контактный телефон<span aria-hidden="true">*</span>:
               <input type="tel" placeholder="Введите телефон" required>
             </label>
           </li>
           <li class="your-contact__item">
-            <label>
+            <label style="padding-left: 10px">
               Электронная почта<span aria-hidden="true">*</span>:
               <input type="email" placeholder="Введите e-mail" required>
             </label>

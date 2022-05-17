@@ -38,4 +38,35 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
+  display: table-caption;
+  margin-left: 20px;
+
+  @media (--tablet) {
+    margin-left: 60px;
+  }
+
+  @media (--desktop) {
+    margin-left: 120px;
+  }
+}
+
+.your-contact__item input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: 0;
+  padding: 16px 0 16px 16px;
+  margin-bottom: 16px;
+
+  @media (--tablet) {
+    width: 254px;
+  }
+
+  @media (--desktop) {
+    width: 414px;
+  }
 }

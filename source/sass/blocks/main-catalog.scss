@@ -1,0 +1,32 @@
+.main-catalog::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 290px; /* тут не помню сколько оно по высоте */
+  background-image:
+    url("../../icons/sprite.svg#SEDONA-catalog"),
+    url("../../icons/sprite.svg#zig-zag"),
+    url("../../img/sedona.jpg");
+  background-repeat: no-repeat;
+  background-size:
+    458px, /* размеры надписи */
+    1200px, /* размеры зигзага */
+    cover; /* тут надо просто заполнить всю площадь фоткой */
+  background-position:
+    center, /* центрирование */
+    bottom -572px center, /* прижимаем загогулину к низу */
+    center; /* при ковровой растяжке фотки лучше всего отцентрировать */
+  background-color: #555555; /* нужен какой-то цвет фоновый на случай незагрузки фотки. */
+
+  @media (--mobile) {
+    background-size:
+      282px,
+      1200px,
+      cover;
+
+    background-position:
+      center, /* центрирование */
+      bottom -572px center, /* прижимаем загогулину к низу */
+      center; /* при ковровой растяжке фотки лучше всего отцентрировать */
+  }
+}
