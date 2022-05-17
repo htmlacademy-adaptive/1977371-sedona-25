@@ -41,8 +41,33 @@
   }
 }
 
-.attraction__text {
+.attraction__item input {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.attraction__text {
+  appearance: none;
+  box-sizing: border-box;
+  margin: 0;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+}
+
+.attraction__text[type="checkbox"] {
+  border-radius: 4px;
+}
+
+.attraction__text[type="checkbox"]:checked {
+  --icon: url("../../icons/tick.svg");
+}
+
+.attraction__text::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--icon) no-repeat center / contain;
 }
