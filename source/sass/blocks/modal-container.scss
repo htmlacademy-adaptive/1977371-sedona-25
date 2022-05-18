@@ -1,0 +1,9 @@
+.modal-container {
+  font-family: "PT Sans", sans-serif;
+  background-color: #ffffff;
+  width: 320px;
+
+  @media (--not-mobile) {
+    width: 640px;
+  }
+}

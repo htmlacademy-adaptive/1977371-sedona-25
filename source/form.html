@@ -18,7 +18,7 @@
   <form action="https://echo.htmlacademy.ru" method="post">
     <div class="your">
       <div class="your-self" role="group" aria-labelledby="your-self">
-        <h3 class="your-self__title" id="your-self">Представьтесь:</h3>
+        <div class="your-self__title" id="your-self">Представьтесь:</div>
         <ul class="your-self__list">
           <li class="your-self__item">
             <label style="padding-left: 10px">
@@ -41,7 +41,7 @@
         </ul>
       </div>
       <div class="your-contact" role="group" aria-labelledby="your-contact">
-        <h3 class="your-contact__title" id="your-contact">Контактная информация:</h3>
+        <div class="your-contact__title" id="your-contact">Контактная информация:</div>
         <ul class="your-contact__list">
           <li class="your-contact__item">
             <label style="padding-left: 10px">
@@ -60,7 +60,7 @@
       </div>
     </div>
     <div class="impression" role="group" aria-labelledby="impression">
-      <h3 class="impression__title" id="impression">Ваше общее впечатление:</h3>
+      <div class="impression__title" id="impression">Ваше общее впечатление:</div>
       <ul class="impression__list">
         <li class="impression__item">
           <label>
@@ -83,7 +83,7 @@
       </ul>
     </div>
     <div class="attraction" role="group" aria-labelledby="attraction">
-      <h3 class="attraction__title" id="attraction">посещенные достопримечательности:</h3>
+      <div class="attraction__title" id="attraction">посещенные достопримечательности:</div>
       <ul class="attraction__list">
         <li class="attraction__item">
           <label>
@@ -112,7 +112,7 @@
       </ul>
     </div>
     <div class="emotions">
-      <p class="emotions__title">Опишите свои эмоции:</p>
+      <label for="emotions" class="emotions__title">Опишите свои эмоции:</label>
       <textarea class="emotions__field" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
     </div>
     <div class="button__form">
@@ -124,8 +124,15 @@
 {% endblock %}
 
 {# Модальное окно #}
-<div class="modal-container modal-container-close">
-  <h2 class="modal-container__title">Что-то пошло не так!</h2>
-  <p class="modal-container__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="modal-container__button button" type="submit">ок</button>
+<div class="mistake-container mistake-container-open">
+  <h2 class="mistake-container__title">Что-то пошло не так!</h2>
+  <p class="mistake-container__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="mistake-container__button button" type="submit">ок</button>
+</div>
+
+<div class="modal-container">
+  <h2 class="modal-container__title">Ваш отзыв отправлен!</h2>
+  <p class="modal-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+    опубликуем его на сайте.</p>
+  <button class="modal-container__button button" type="submit">Закрыть окно</button>
 </div>
