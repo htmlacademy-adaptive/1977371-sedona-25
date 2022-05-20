@@ -57,6 +57,8 @@
 
 .main-nav--opened .main-nav__toggle {
   @media (--mobile) {
+    position: absolute;
+    right: 20px;
     background-color: #81b3d2;
   }
 }
@@ -71,6 +73,12 @@
     height: 22.2px;
     background-color: #ffffff;
     mask-image: url(../../icons/sprite.svg#cross);
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  @media (--mobile) {
+    width: 320px;
   }
 }
 
