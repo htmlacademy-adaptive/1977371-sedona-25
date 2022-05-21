@@ -53,3 +53,19 @@
   font-size: 18px;
   line-height: 26px;
 }
+
+.impression__different[type="radio"] {
+  border-radius: 23px;
+}
+
+.impression__different[type="radio"]:checked {
+  --icon: url("../../icons/dot.svg");
+}
+
+.impression__different::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--icon) no-repeat center / contain;
+}
