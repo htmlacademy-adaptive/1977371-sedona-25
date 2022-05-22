@@ -9,10 +9,6 @@
 }
 
 .main-nav__wrapper {
-  @media (--mobile) {
-    margin-left: 67px;
-  }
-
   @media (--tablet) {
     display: grid;
     grid-template-columns: 153px 153px 153px 153px 153px;
