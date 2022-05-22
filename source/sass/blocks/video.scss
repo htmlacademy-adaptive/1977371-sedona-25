@@ -9,3 +9,29 @@
     margin: 0 200px;
   }
 }
+
+.video::after {
+  content: "";
+  display: block;
+  position: relative;
+  mask-repeat: no-repeat;
+  width: 48px;
+  height: 54px;
+  background: #ffffff;
+  mask-image: url("../../icons/sprite.svg#play");
+
+  @media (--mobile) {
+    bottom: 120px;
+    left: 140px;
+  }
+
+  @media (--tablet) {
+    bottom: 276px;
+    left: 360px;
+  }
+
+  @media (--desktop) {
+    bottom: 276px;
+    left: 575px;
+  }
+}

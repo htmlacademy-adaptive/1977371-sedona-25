@@ -1,13 +1,47 @@
 .main-container {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 
-  &--catalog {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 214px;
+    background-image:
+      url("../../icons/sprite.svg#sedona"),
+      url("../../icons/sprite.svg#zig-zag"),
+      url("../../img/sedona.jpg");
+    background-repeat: no-repeat;
+    background-size:
+      458px,
+      1200px,
+      cover;
+    background-position:
+      center,
+      bottom,
+      bottom;
+    background-color: #555555;
+
     @media (--mobile) {
-      width: 280px;
+      background-size:
+        282px,
+        1200px,
+        1200px 518px;
     }
+  }
+
+  &--index::before {
+    height: 485px;
+    background-image:
+      url("../../icons/sprite.svg#welcom"),
+      url("../../icons/sprite.svg#zig-zag"),
+      url("../../img/sedona.jpg");
+    background-position:
+      center,
+      bottom,
+      top;
   }
 }

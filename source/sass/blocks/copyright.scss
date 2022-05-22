@@ -1,25 +1,28 @@
-.copyright__text {
+.copyright {
+  align-self: center;
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   width: 121px;
+  color: #000000;
+  text-decoration: none;
   text-transform: uppercase;
 
-  @media (--mobile) {
-    margin-left: 80px;
+  &:hover {
+    color: #81b3d2;
   }
-}
 
-.copyright__text:hover {
-  color: #81b3d2;
-}
+  &:active {
+    color: #b3b3b3;
+  }
 
-.copyright__text:disabled {
-  color: #b3b3b3;
-}
-
-.copyright__link {
-  @media (--not-mobile) {
-    margin-top: 43px;
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: currentcolor;
+    mask: url("../../icons/sprite.svg#htmlacademy") no-repeat center / contain;
   }
 }

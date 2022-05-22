@@ -1,6 +1,5 @@
 .main-header {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   background-color: #ffffff;
   color: #ffffff;
 }
@@ -17,8 +16,4 @@
   display: block;
   height: 96px;
   width: 185px;
-
-  @media (--mobile) {
-    order: 1;
-  }
 }

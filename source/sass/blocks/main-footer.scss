@@ -4,32 +4,30 @@
 }
 
 .main-footer__wrapper {
+  display: grid;
+  place-items: center;
+  gap: 28px;
+  padding: 28px 0;
+
   @media (--not-mobile) {
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 36px 0;
   }
 }
 
-.main-footer__contacts {
-  width: 166px;
-  margin: auto;
-  margin-top: 38px;
-  margin-bottom: 33px;
-  text-align: center;
-
-  @media (--tablet) {
-    margin: 48px 97px 46px 45px;
-  }
-
-  @media (--desktop) {
-    margin: 48px 254px 46px 104px;
-  }
-}
-
-.main-footer__contacts__link {
+.main-footer__contacts-link {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }

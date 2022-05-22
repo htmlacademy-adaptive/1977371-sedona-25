@@ -10,15 +10,16 @@
   @media (--not-mobile) {
     margin: 0;
   }
-}
 
-.your-contact::after {
-  @media (--mobile) {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 1px;
-    background-color: #e5e5e5;
+  &::after {
+    @media (--mobile) {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
   }
 }
 
@@ -61,7 +62,7 @@
 }
 
 .your-contact__item input {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -71,11 +72,26 @@
   padding: 16px 0 16px 16px;
   margin-bottom: 16px;
 
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+
   @media (--tablet) {
     width: 254px;
   }
 
   @media (--desktop) {
     width: 414px;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
   }
 }
