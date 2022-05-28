@@ -9,6 +9,10 @@
   width: 282px;
   margin: 32px 20px 35px;
 
+  @media (--mobile) {
+    height: 80px;
+  }
+
   @media (--tablet) {
     width: 520px;
     font-size: 21px;

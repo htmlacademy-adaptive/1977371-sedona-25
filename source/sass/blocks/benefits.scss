@@ -102,7 +102,7 @@
   text-align: center;
 
   @media (--mobile) {
-    padding: 39px 16px 35px 15px;
+    padding: 54px 16px 35px 15px;
   }
 
   @media (--tablet) {
@@ -111,6 +111,12 @@
 
   @media (--desktop) {
     padding: 47px 52px 57px 53px;
+  }
+}
+
+.benefits__text:last-child {
+  @media (--mobile) {
+    padding: 39px 16px 35px 15px;
   }
 }
 

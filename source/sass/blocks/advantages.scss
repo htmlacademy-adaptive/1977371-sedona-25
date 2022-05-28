@@ -44,10 +44,16 @@
 
     &--housing {
       margin-top: 25px;
+      margin-left: 18px;
+    }
+
+    &--food {
+      margin-left: 18px;
     }
 
     &--souvenirs {
       margin-bottom: 52px;
+      margin-left: 22px;
     }
   }
 
@@ -163,6 +169,8 @@
 }
 
 .advantages__description {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -170,22 +178,24 @@
   padding: 0;
 
   @media (--mobile) {
-    margin-top: 16px;
+    margin-top: 10px;
     text-align: left;
 
     &--housing {
       width: 225px;
-      margin-left: 65px;
+      margin-left: 47px;
     }
 
     &--food {
       width: 232px;
-      margin-left: 70px;
+      height: 42px;
+      margin-left: 52px;
     }
 
     &--souvenirs {
       width: 202px;
-      margin-left: 62px;
+      height: 42px;
+      margin-left: 40px;
     }
   }
 }

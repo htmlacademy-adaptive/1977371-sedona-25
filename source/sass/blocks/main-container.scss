@@ -43,5 +43,9 @@
       center,
       bottom,
       top;
+
+    @media (--mobile) {
+      height: 389px;
+    }
   }
 }

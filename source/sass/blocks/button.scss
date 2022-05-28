@@ -16,6 +16,10 @@
     text-transform: uppercase;
     border: 0;
 
+    @media (--mobile) {
+      margin-top: 32px;
+    }
+
     @media (--not-mobile) {
       font-size: 21px;
       width: 458px;
