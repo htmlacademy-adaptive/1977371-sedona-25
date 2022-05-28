@@ -22,15 +22,21 @@
 }
 
 .form__text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
+  height: 21px;
   margin: 0;
   margin-right: 20px;
-  text-align: right;
 
   @media (--not-mobile) {
+    font-size: 14px;
     margin: 0;
+    margin-top: 23px;
+    color: #333333;
   }
 }
