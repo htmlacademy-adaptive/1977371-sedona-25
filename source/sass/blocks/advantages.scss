@@ -62,19 +62,19 @@
 
     &--housing {
       width: 185px;
-      padding-top: 60px;
+      padding-top: 50px;
       padding-bottom: 59px;
     }
 
     &--food {
       width: 180px;
-      padding-top: 63px;
+      padding-top: 53px;
       padding-bottom: 59px;
     }
 
     &--souvenirs {
       width: 193px;
-      padding-top: 57px;
+      padding-top: 47px;
       padding-bottom: 81px;
     }
   }
@@ -196,6 +196,12 @@
       width: 202px;
       height: 42px;
       margin-left: 40px;
+    }
+  }
+
+  @media (--tablet) {
+    &--souvenirs {
+      height: 42px;
     }
   }
 }

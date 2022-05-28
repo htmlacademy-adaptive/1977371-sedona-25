@@ -1,11 +1,12 @@
 .copyright {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   align-self: center;
   display: flex;
   align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  width: 121px;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
@@ -20,8 +21,8 @@
 
   &::after {
     content: "";
-    width: 40px;
-    height: 40px;
+    width: 26px;
+    height: 34px;
     background: currentcolor;
     mask: url("../../icons/sprite.svg#htmlacademy") no-repeat center / contain;
   }

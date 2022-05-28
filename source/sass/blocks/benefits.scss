@@ -14,6 +14,34 @@
   }
 }
 
+.benefits__item {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+
+  &::after {
+    @media (--mobile) {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 2332px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  &::before {
+    @media (--mobile) {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 2168px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
+}
 
 .benefits__item:nth-child(3) {
   background-color: #eeeeee;
@@ -23,6 +51,8 @@
   }
 
   @media (--tablet) {
+    width: 189px;
+    height: 151px;
     padding: 42px 34px 63px 33px;
   }
 
@@ -40,7 +70,9 @@
   }
 
   @media (--tablet) {
-    padding: 41px 48px 41px 46px;
+    width: 162px;
+    height: 173px;
+    padding: 41px 48px 42px 46px;
   }
 
   @media (--desktop) {
@@ -57,6 +89,8 @@
   }
 
   @media (--tablet) {
+    width: 175px;
+    height: 172px;
     padding: 42px 41.5px;
   }
 
@@ -114,9 +148,21 @@
   }
 }
 
-.benefits__text:last-child {
+.benefits__texts {
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+
   @media (--mobile) {
     padding: 39px 16px 35px 15px;
+  }
+
+  @media (--tablet) {
+    padding: 41.5px 32px;
+  }
+
+  @media (--desktop) {
+    padding: 47px 52px 57px 53px;
   }
 }
 

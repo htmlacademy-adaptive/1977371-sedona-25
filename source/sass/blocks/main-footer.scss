@@ -7,11 +7,11 @@
   display: grid;
   place-items: center;
   gap: 28px;
-  padding: 28px 0;
+  padding: 38px 0;
 
   @media (--not-mobile) {
     grid-template-columns: repeat(3, 1fr);
-    padding: 36px 0;
+    padding: 45px 0;
   }
 }
 

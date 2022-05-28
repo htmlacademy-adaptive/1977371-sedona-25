@@ -9,7 +9,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 38px;
+  margin-top: 39px;
   margin-bottom: 21px;
 
   @media (--not-mobile) {
@@ -49,6 +49,8 @@
 }
 
 .information__text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -56,9 +58,14 @@
   margin: auto;
   padding: 0;
 
+  @media (--mobile) {
+    height: 68px;
+  }
+
   @media (--tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     width: 435px;
+    height: 42px;
   }
 
   @media (--desktop) {
