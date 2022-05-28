@@ -26,37 +26,21 @@
             </p>
           </div>
           <div class="benefits__img">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/photo-city-desktop@1x.jpg 1x, ./img/photo-city-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/photo-city-tablet@1x.jpg 1x, ./img/photo-city-tablet@2x.jpg 2x">
-              <img class="photo-sedona" src="./img/photo-city-mobile@1x.jpg" srcset="./img/photo-city-mobile@2x.jpg 2x" alt="Фотография седоны">
-            </picture>
+           {% include "./templates/picture.twig" with {name: "photo-city", class: "photo-sedona"} %}
           </div>
           <div class="advantages">
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--housing">
-                <svg class="advantages__item-logo--housing" width="80" height="80">
-                  <use href="./icons/sprite.svg#housing" />
-                </svg>
                 <h3 class="advantages__title advantages__title--housing">Жилье</h3>
-                <p class="advantages__description advantages__description--housing">Рекомендуем пожить в настоящем
-                  мотеле, все как в кино!</p>
+                <p class="advantages__description advantages__description--housing">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="advantages__item advantages__item--food">
-                <svg class="advantages__item-logo--food" width="80" height="80">
-                  <use href="./icons/sprite.svg#food" />
-                </svg>
                 <h3 class="advantages__title advantages__title--food">Еда</h3>
-                <p class="advantages__description advantages__description--food">Всегда заказывайте фирменный бургер,вы
-                  не разочаруетесь!</p>
+                <p class="advantages__description advantages__description--food">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
               </li>
               <li class="advantages__item advantages__item--souvenirs">
-                <svg class="advantages__item-logo--souvenirs" width="80" height="80">
-                  <use href="./icons/sprite.svg#souvenirs" />
-                </svg>
                 <h3 class="advantages__title advantages__title--souvenirs">Сувениры</h3>
-                <p class="advantages__description advantages__description--souvenirs">Не только китайского, но и
-                  местного производства!</p>
+                <p class="advantages__description advantages__description--souvenirs">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </div>
@@ -71,11 +55,7 @@
             </p>
           </div>
           <div class="benefits__img">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="photo-sedona" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография моста">
-            </picture>
+            {% include "./templates/picture.twig" with {name: "photo-bridge", class: "photo-sedona"} %}
           </div>
         </li>
         <li class="benefits__item">
@@ -112,16 +92,10 @@
     <p class="information__text">
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
     </p>
-    <div class="button__index">
-      <a class="button button--index" href="#">Найти гостиницу</a>
-    </div>
+    <a class="button button--index" href="#">Найти гостиницу</a>
   </section>
   <div class="maps">
-    <picture>
-      <source media="(min-width: 1200px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
-      <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-      <img src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Карта городка Седона">
-    </picture>
+    {% include "./templates/picture.twig" with {name: "map", class: ""} %}
   </div>
 </main>
 {% endblock %}

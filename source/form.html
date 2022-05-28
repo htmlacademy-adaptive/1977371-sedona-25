@@ -5,17 +5,17 @@
 {% block main %}
 <main class="main-container">
   <h1 class="visually-hidden">Отзывы</h1>
-  <section class="description--form">
-    <header class="description__header--form">
-      <h2 class="description__title--form">
+  <section class="description description--form">
+    <header class="description__header description__header--form">
+      <h2 class="description__title description__title--form">
         Оставьте свой отзыв
       </h2>
-      <p class="description__text--form">
+      <p class="description__text description__text--form">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </header>
   </section>
-  <form action="https://echo.htmlacademy.ru" method="post">
+  <form class="form" action="https://echo.htmlacademy.ru" method="post">
     <div class="your">
       <div class="your-self" role="group" aria-labelledby="your-self">
         <div class="your-self__title" id="your-self">Представьтесь:</div>
@@ -115,24 +115,24 @@
       <label for="emotions" class="emotions__title">Опишите свои эмоции:</label>
       <textarea class="emotions__field" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
     </div>
-    <div class="button__form">
+    <div class="form__button">
       <button class="button button--form" type="submit">Отправить отзыв</button>
-      <p class="button__text" aria-hidden="true">* — обязательные поля</p>
+      <p class="form__text" aria-hidden="true">* — обязательные поля</p>
     </div>
   </form>
 </main>
-{% endblock %}
 
 {# Модальное окно #}
-<div class="mistake-container mistake-container-open">
+<div class="mistake-container mistake-container-open" hidden>
   <h2 class="mistake-container__title">Что-то пошло не так!</h2>
   <p class="mistake-container__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
   <button class="mistake-container__button button" type="submit">ок</button>
 </div>
 
-<div class="modal-container">
+<div class="modal-container" hidden>
   <h2 class="modal-container__title">Ваш отзыв отправлен!</h2>
   <p class="modal-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
     опубликуем его на сайте.</p>
   <button class="modal-container__button button" type="submit">Закрыть окно</button>
 </div>
+{% endblock %}

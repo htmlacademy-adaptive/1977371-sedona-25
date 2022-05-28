@@ -21,11 +21,7 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <p class="catalog__item-image">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop@1x.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet@1x.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
-              <img src="img/catalog/photo-1-mobile@1x.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Народные просторы">
-            </picture>
+            {% include "./templates/picture.twig" with {name: "catalog/photo-1", class: ""} %}
           </p>
           <div class="catalog__signatur">
             <div>
@@ -42,11 +38,7 @@
         </li>
         <li class="catalog__item-two">
           <p class="catalog__item-two-image">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop@1x.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet@1x.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
-              <img src="img/catalog/photo-2-mobile@1x.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Местная растительность.">
-            </picture>
+            {% include "./templates/picture.twig" with {name: "catalog/photo-2", class: ""} %}
           </p>
           <div class="catalog__signatur">
             <div>
@@ -63,11 +55,7 @@
         </li>
         <li class="catalog__item-two">
           <p class="catalog__item-two-image">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop@1x.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet@1x.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
-              <img src="img/catalog/photo-3-mobile@1x.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Дорога на север.">
-            </picture>
+            {% include "./templates/picture.twig" with {name: "catalog/photo-3", class: ""} %}
           </p>
           <div class="catalog__signatur">
             <div>
@@ -84,11 +72,7 @@
         </li>
         <li class="catalog__item-two">
           <p class="catalog__item-two-image">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop@1x.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet@1x.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
-              <img src="img/catalog/photo-4-mobile@1x.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола.">
-            </picture>
+            {% include "./templates/picture.twig" with {name: "catalog/photo-4", class: ""} %}
           </p>
           <div class="catalog__signatur">
             <div>
@@ -115,11 +99,7 @@
     </p>
   </section>
   <div class="video">
-    <picture>
-      <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop@1x.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
-      <source media="(min-width: 768px)" srcset="img/catalog/video-tablet@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
-      <img class="video-catalog" src="img/catalog/video-mobile@1x.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Превью видео.">
-    </picture>
+    {% include "./templates/picture.twig" with {name: "catalog/video", class: "video-catalog"} %}
   </div>
 </main>
 {% endblock %}

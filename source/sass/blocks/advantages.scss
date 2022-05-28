@@ -24,6 +24,18 @@
 }
 
 .advantages__item {
+  &--housing {
+    --icon: url("../../icons/sprite.svg#housing");
+  }
+
+  &--food {
+    --icon: url("../../icons/sprite.svg#food");
+  }
+
+  &--souvenirs {
+    --icon: url("../../icons/sprite.svg#souvenirs");
+  }
+
   @media (--mobile) {
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +92,19 @@
       width: 244px;
       padding-top: 57px;
       padding-bottom: 80px;
+    }
+  }
+
+  &::before {
+    content: var(--icon);
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    @media (--not-mobile) {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
     }
   }
 }
@@ -161,45 +186,6 @@
     &--souvenirs {
       width: 202px;
       margin-left: 62px;
-    }
-  }
-}
-
-.advantages__item-logo {
-  @media (--mobile) {
-    &--housing {
-      width: 39px;
-      height: 37px;
-      margin-left: 18px;
-    }
-
-    &--food {
-      width: 40px;
-      height: 35px;
-      margin-left: 18px;
-    }
-
-    &--souvenirs {
-      width: 32px;
-      height: 38px;
-      margin-left: 22px;
-    }
-  }
-
-  @media (--not-mobile) {
-    &--housing {
-      width: 75px;
-      height: 72px;
-    }
-
-    &--food {
-      width: 76px;
-      height: 68px;
-    }
-
-    &--souvenirs {
-      width: 64px;
-      height: 75px;
     }
   }
 }
