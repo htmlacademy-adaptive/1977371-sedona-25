@@ -1,12 +1,22 @@
+.video {
+  @media (--mobile) {
+    height: 177px;
+  }
+}
+
 .video-catalog {
   margin: 0 20px;
 
   @media (--tablet) {
     margin: 0 60px;
+    width: 648px;
+    height: 500px;
   }
 
   @media (--desktop) {
     margin: 0 200px;
+    width: 800px;
+    height: 500px;
   }
 }
 

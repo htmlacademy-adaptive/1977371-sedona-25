@@ -33,11 +33,13 @@
 
     @media (--mobile) {
       margin: 33px auto 26px;
+      height: 26px;
       width: 280px;
     }
 
     @media (--tablet) {
       width: 458px;
+      height: 26px;
       font-size: 30px;
       line-height: 26px;
       margin: 66px auto 26px;
@@ -45,6 +47,7 @@
 
     @media (--desktop) {
       width: 458px;
+      height: 26px;
       font-size: 30px;
       line-height: 26px;
       margin: 104px auto 26px;
@@ -59,7 +62,8 @@
     text-align: center;
     text-transform: uppercase;
     width: 280px;
-    margin: 36px auto 24px;
+    height: 26px;
+    margin: 34px auto 24px;
 
     @media (--tablet) {
       width: 435px;
@@ -76,6 +80,8 @@
 }
 
 .description__text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -122,9 +128,11 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto 53px;
+    height: 84px;
 
     @media (--tablet) {
       width: 435px;
+      height: 48px;
       margin: 0 auto 102px;
     }
 

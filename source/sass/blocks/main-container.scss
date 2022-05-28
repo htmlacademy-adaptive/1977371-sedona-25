@@ -26,10 +26,8 @@
     background-color: #555555;
 
     @media (--mobile) {
-      background-size:
-        282px,
-        1200px,
-        1200px 518px;
+      height: 158px;
+      background-size: 229px, 1200px, 900px 400px;
     }
   }
 
@@ -49,3 +47,4 @@
     }
   }
 }
+

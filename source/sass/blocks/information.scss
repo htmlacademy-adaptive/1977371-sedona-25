@@ -3,6 +3,10 @@
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 49px;
+
+  &--catalog {
+    padding: 0;
+  }
 }
 
 .information__title {
@@ -19,13 +23,19 @@
   }
 
   &--catalog {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
-    width: 216px;
     margin: 17px auto 26px;
+
+    @media (--mobile) {
+      width: 266px;
+      height: 26px;
+    }
 
     @media (--tablet) {
       font-size: 30px;

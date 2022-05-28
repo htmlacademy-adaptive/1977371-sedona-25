@@ -51,6 +51,12 @@
   }
 }
 
+.your-self__text {
+  @media (--mobile) {
+    width: 264px;
+  }
+}
+
 .your-self__item input {
   font-family: inherit;
   font-weight: 700;
