@@ -17,7 +17,7 @@
   @media (--desktop) {
     font-size: 21px;
     width: 400px;
-    margin: 55px auto 28px;
+    margin: 55px auto 44px;
   }
 }
 
@@ -50,9 +50,11 @@
   }
 
   @media (--desktop) {
+    padding-inline: 173px;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr) 238px;
+    gap: 28px;
   }
 }
 

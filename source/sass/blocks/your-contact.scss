@@ -2,7 +2,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   text-transform: uppercase;
   margin-top: 64px;
   margin-bottom: 59px;
@@ -36,12 +35,20 @@
     font-size: 21px;
     margin: 0 auto 28px;
   }
+
+  @media (--desktop) {
+    margin: 4px auto 28px;
+  }
 }
 
 .your-contact__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (--desktop) {
+    padding-left: 64px;
+  }
 }
 
 .your-contact__item {
@@ -49,7 +56,6 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  display: table-caption;
   margin-left: 20px;
 
   @media (--tablet) {
@@ -57,7 +63,11 @@
   }
 
   @media (--desktop) {
-    margin-left: 120px;
+    margin-inline: 0;
+  }
+
+  & label {
+    padding-left: 16px;
   }
 }
 
@@ -87,7 +97,8 @@
   }
 
   @media (--desktop) {
-    width: 414px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   &::placeholder {

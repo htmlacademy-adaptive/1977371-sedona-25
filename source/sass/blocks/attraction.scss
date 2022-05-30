@@ -17,7 +17,7 @@
   @media (--desktop) {
     font-size: 21px;
     width: 306px;
-    margin: 56px auto 20px;
+    margin: 73px auto 59px;
   }
 }
 
@@ -41,18 +41,27 @@
   }
 
   @media (--desktop) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    gap: 64px;
+    justify-content: center;
   }
 }
 
-.attraction__item input {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+.attraction__item {
+  & label {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
 
-  @media (--tablet) {
-    margin-bottom: 16px;
+  & input {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    @media (--tablet) {
+      margin-bottom: 16px;
+    }
   }
 }
 

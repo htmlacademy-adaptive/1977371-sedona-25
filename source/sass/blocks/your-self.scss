@@ -25,6 +25,10 @@
     font-size: 21px;
     margin: 0 auto 28px;
   }
+
+  @media (--desktop) {
+    margin: 4px auto 28px;
+  }
 }
 
 .your-self__list {
@@ -32,6 +36,10 @@
   display: block;
   padding: 0;
   margin: 0;
+
+  @media (--desktop) {
+    padding-right: 64px;
+  }
 }
 
 .your-self__item {
@@ -39,7 +47,6 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  display: table-caption;
   margin-left: 20px;
 
   @media (--tablet) {
@@ -47,7 +54,11 @@
   }
 
   @media (--desktop) {
-    margin-left: 120px;
+    margin-left: 0;
+  }
+
+  & label {
+    padding-left: 16px;
   }
 }
 

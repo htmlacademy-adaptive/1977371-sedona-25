@@ -41,5 +41,9 @@
     padding: 18.5px 33px 13.5px;
     text-transform: uppercase;
     border: 0;
+
+    @media (--desktop) {
+      width: 384px;
+    }
   }
 }
