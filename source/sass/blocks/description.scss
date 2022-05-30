@@ -74,7 +74,7 @@
     }
 
     @media (--desktop) {
-      width: 435px;
+      width: 436px;
       font-size: 30px;
       margin: 115px auto 20px;
     }
@@ -145,9 +145,10 @@
     }
 
     @media (--desktop) {
-      width: 435px;
+      width: 436px;
+      height: auto;
       line-height: 21px;
-      margin: 0 auto 66px;
+      margin: 29px auto 66px;
     }
   }
 }

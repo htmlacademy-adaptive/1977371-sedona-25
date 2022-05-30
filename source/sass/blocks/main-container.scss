@@ -29,6 +29,14 @@
       height: 158px;
       background-size: 229px, 1200px, 900px 400px;
     }
+
+    @media (--desktop) {
+      height: 300px;
+      background-position:
+        50% 56%,
+        bottom,
+        bottom;
+    }
   }
 
   &--index::before {
