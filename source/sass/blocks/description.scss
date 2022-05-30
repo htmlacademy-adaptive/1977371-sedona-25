@@ -10,7 +10,9 @@
   margin: 32px 20px 35px;
 
   @media (--mobile) {
-    height: 80px;
+    // height: 80px;
+    padding-inline: 5px;
+    box-sizing: border-box;
   }
 
   @media (--tablet) {
@@ -79,6 +81,12 @@
   }
 }
 
+.description__header {
+  @media (--desktop) {
+    margin-bottom: 47px;
+  }
+}
+
 .description__text {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -98,8 +106,8 @@
   }
 
   @media (--desktop) {
-    margin: 0 auto 44px;
-    width: 484px;
+    margin: 0 auto;
+    width: 488px;
   }
 
 

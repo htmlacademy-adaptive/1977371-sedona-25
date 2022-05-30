@@ -44,6 +44,14 @@
 
     @media (--mobile) {
       height: 389px;
+      background-size: 280px, 1200px, 900px 400px;
+    }
+
+    @media (--desktop) {
+      background-position:
+        50% 40%,
+        bottom,
+        top;
     }
   }
 }

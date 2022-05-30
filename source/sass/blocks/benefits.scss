@@ -18,6 +18,10 @@
   font-family: "PT Sans", sans-serif;
   font-style: normal;
 
+  &:nth-child(2n+2) {
+    --order: 2;
+  }
+
   &::after {
     @media (--mobile) {
       content: "";
@@ -85,7 +89,7 @@
   background-color: #eeeeee;
 
   @media (--mobile) {
-    padding: 24px 18px 26px 18px;
+    padding: 27px 18px 26px 18px;
   }
 
   @media (--tablet) {
@@ -114,6 +118,10 @@
     font-size: 21px;
     margin-bottom: 57px;
   }
+
+  @media (--desktop) {
+    padding-inline: 72px;
+  }
 }
 
 .benefits__description {
@@ -128,33 +136,20 @@
   @media (--not-mobile) {
     font-weight: 400;
   }
+
+  @media (--desktop) {
+    padding-inline: 15px;
+  }
 }
 
 .benefits__text {
+  order: var(--order);
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
 
   @media (--mobile) {
-    padding: 54px 16px 35px 15px;
-  }
-
-  @media (--tablet) {
-    padding: 41.5px 32px;
-  }
-
-  @media (--desktop) {
-    padding: 47px 52px 57px 53px;
-  }
-}
-
-.benefits__texts {
-  background-color: #81b3d2;
-  color: #ffffff;
-  text-align: center;
-
-  @media (--mobile) {
-    padding: 39px 16px 35px 15px;
+    padding: 56px 20px 40px;
   }
 
   @media (--tablet) {
@@ -168,6 +163,11 @@
 
 .benefits__img {
   grid-column-end: span 2;
+
+  & img {
+    object-fit: cover;
+    // object-position: center;
+  }
 }
 
 .benefits__item:nth-child(2n+2) .photo-sedona {

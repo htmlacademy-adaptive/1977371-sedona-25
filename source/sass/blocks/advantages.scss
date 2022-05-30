@@ -16,6 +16,10 @@
   padding: 0;
   margin: 0;
 
+  @media (--mobile) {
+    margin-block: 25px 28px;
+  }
+
   @media (--not-mobile) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -41,20 +45,7 @@
     flex-wrap: wrap;
     margin: 0;
     margin-bottom: 22px;
-
-    &--housing {
-      margin-top: 25px;
-      margin-left: 18px;
-    }
-
-    &--food {
-      margin-left: 18px;
-    }
-
-    &--souvenirs {
-      margin-bottom: 52px;
-      margin-left: 22px;
-    }
+    margin-left: 18px;
   }
 
   @media (--tablet) {
@@ -81,24 +72,9 @@
 
   @media (--desktop) {
     margin: auto;
-
-    &--housing {
-      width: 282px;
-      padding-top: 59px;
-      padding-bottom: 80px;
-    }
-
-    &--food {
-      width: 313px;
-      padding-top: 63px;
-      padding-bottom: 81px;
-    }
-
-    &--souvenirs {
-      width: 244px;
-      padding-top: 57px;
-      padding-bottom: 80px;
-    }
+    width: 313px;
+    padding-top: 54px;
+    padding-bottom: 83px;
   }
 
   &::before {
@@ -130,11 +106,12 @@
     }
 
     &--souvenirs {
-      margin-left: 8px;
+      margin-left: 4px;
     }
   }
 
   @media (--not-mobile) {
+    margin-top: 24px;
     margin-bottom: 21px;
     font-size: 21px;
   }
@@ -146,20 +123,6 @@
 
     &--food {
       margin-top: 27px;
-    }
-
-    &--souvenirs {
-      margin-top: 26px;
-    }
-  }
-
-  @media (--desktop) {
-    &--housing {
-      margin-top: 28px;
-    }
-
-    &--food {
-      margin-top: 25px;
     }
 
     &--souvenirs {
@@ -187,7 +150,7 @@
     }
 
     &--food {
-      width: 232px;
+      width: 234px;
       height: 42px;
       margin-left: 52px;
     }
@@ -195,13 +158,11 @@
     &--souvenirs {
       width: 202px;
       height: 42px;
-      margin-left: 40px;
+      margin-left: 44px;
     }
   }
 
-  @media (--tablet) {
-    &--souvenirs {
-      height: 42px;
-    }
+  @media (--desktop) {
+    padding-inline: 8px;
   }
 }
